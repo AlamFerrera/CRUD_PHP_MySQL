@@ -5,7 +5,7 @@ function setMessage($msj, $typeColor){
   $_SESSION['message_type'] = $typeColor;
 }
 
-function messageSuccess(){
+function messageDisplay(){
 ?>
   <div class="alert alert-<?= $_SESSION['message_type'] ?> alert-dismissible fade show" role="alert">
     <?= $_SESSION['message']?>

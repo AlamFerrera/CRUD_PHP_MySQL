@@ -12,7 +12,8 @@ if($_POST['save']){
     mysqli_close($conn);
     
     if(!$result){
-        echo "Error al guardar";
+        setMessage('Error al guardar tarea', 'danger');
+        redirect('index.php');
     }
     else{
         setMessage('Tarea guardada exitosamente', 'success');

@@ -2,7 +2,7 @@
 require_once('includes/messages.php');
 
 if(isset($_SESSION['message'])){        
-    messageSuccess();
+    messageDisplay();
 }
 ?>
 
